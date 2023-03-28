@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import {toast} from "react-toastify"
 
 import InputControl from "./InputControl";
 import { auth } from "../firebase";
 
 import styles from "./Login.module.css";
 
-function Login() {
+function TrainerLogin() {
     const navigate = useNavigate();
     const [values, setValues] = useState({
         email: "",
@@ -28,8 +27,8 @@ function Login() {
         signInWithEmailAndPassword(auth, values.email, values.pass)
             .then(async (res) => {
                 setSubmitButtonDisabled(false);
-                toast.success("Login Successfully");
-                navigate("/admin-dashboard");
+
+                navigate("/trainer");
             })
             .catch((err) => {
                 setSubmitButtonDisabled(false);
@@ -40,7 +39,7 @@ function Login() {
        
             <div className={styles.container}>
                 <div className={styles.innerBox}>
-                    <h1 className={styles.heading}>Welcome Onboard</h1>
+                    <h1 className={styles.heading}>Trainers Portal</h1>
 
                     <InputControl
                         label="Email"
@@ -62,12 +61,7 @@ function Login() {
                         <button disabled={submitButtonDisabled} onClick={handleSubmission}>
                         Login
                     </button>
-                    <p>
-                        Don't have an account?{" "}
-                        <span>
-                            <Link to="/signup">Sign up</Link>
-                        </span>
-                    </p>
+                    
                 </div>
             </div>
         </div>
@@ -75,4 +69,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default TrainerLogin;

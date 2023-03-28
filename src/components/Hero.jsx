@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom'
 const Hero = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
     const transition = { type: 'spring', duration: 3 }
-    const navigate= useNavigate()
+    const navigate = useNavigate()
     return (
         <div className="hero">
             <div className="blur blur-h"></div>
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="right-h">
-                <button className="btn" onClick={() => navigate('/signup')}>Login</button>
+                <button className="btn" onClick={() => navigate('/button')}>Login/Signup</button>
 
                 <motion.div
                     initial={{ right: "-1rem" }}

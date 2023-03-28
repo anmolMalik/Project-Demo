@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState} from "react";
+import { Link, useNavigate,  } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {toast} from "react-toastify"
 
 import InputControl from "./InputControl";
 import { auth } from "../firebase";
+
 
 import styles from "./Signup.module.css";
 
@@ -16,6 +18,8 @@ function Signup() {
   });
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
+
+ 
 
   const handleSubmission = async(e) => {
     e.preventDefault()
@@ -43,11 +47,13 @@ function Signup() {
     createUserWithEmailAndPassword(auth, values.email, values.pass)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
+        toast.success("Signup Successfully");
+        navigate("/login")
         const user = res.user;
         await updateProfile(user, {
           displayName: values.name,
         });
-        navigate("/login");
+       ;
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);

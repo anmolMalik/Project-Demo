@@ -13,7 +13,7 @@
 .left-j>hr{
     position: absolute;
     width: 10.5rem;
-    border: 2px solid var(--orange);
+    border: 2px solid #f48915;
     border-radius: 20%;
     margin: -10px 0;
 }
@@ -36,13 +36,13 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: var(--lightgray);
+    color: #d9d9d9;
 }
 ::placeholder{
-    color: var(--lightgray);
+    color: #d9d9d9;
 }
 .btn-j{
-    background-color: var(--orange);
+    background-color: #f48915;
     color: white;
 }
 @media screen and (max-width:768px){

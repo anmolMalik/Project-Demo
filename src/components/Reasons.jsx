@@ -39,7 +39,7 @@ const Reasons = () => {
                         <span>World Class Partners</span>
                     </div>
                 </div>
-                <span style={{ color: "var(--gray)", fontWeight: "normal", }}>
+                <span style={{ color: "#9c9c9c", fontWeight: "normal", }}>
                     Our Partners
                 </span>
                 <div className="partners">

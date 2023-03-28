@@ -19,18 +19,18 @@
 .plan {
     display: flex;
     flex-direction: column;
-    background-color: var(--caloryCard);
+    background-color: #656565;
     color: white;
     gap: 2rem;
     padding: 1.5rem;
-    width: 10rem;
+    width: 20rem;
 }
 .plan:nth-child(2){
     transform: scale(1.1);
     background: var(--planCard);
 }
 .plan>svg{
-    fill: var(--orange);
+    fill: #f48915;
     width: 2rem;
     height: 2rem;
 }
@@ -59,7 +59,7 @@
     fill: white;
 }
 .plans>:nth-child(2)>button{
-    color: orange;
+    color: white;
 }
 .blur-1{
     width: 32rem;
@@ -73,6 +73,7 @@
     right: 0;
 
 }
+
 @media screen and (max-width:768px){
     .plans{
         flex-direction: column;

@@ -18,7 +18,7 @@
 }
 .header-menu>li:hover{
     cursor: pointer;
-    color:var(--orange);
+    color:#f48915;
     
 }
 .header-menu a{
@@ -33,7 +33,7 @@
     }
     .header-menu{
         flex-direction: column;
-        background-color: var(--appColor);
+        background-color: #3c3f45;
         padding: 2rem;
     }
     

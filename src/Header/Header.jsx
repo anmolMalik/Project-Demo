@@ -12,7 +12,7 @@ const Header = () => {
       {menuOpened === false && mobile === true ? (
         <div
           style={{
-            backgroundColor: "var(--appColor)",
+            backgroundColor: "#3c3f45",
             padding: "0.5rem",
             borderRadius: "5px"
           }}
