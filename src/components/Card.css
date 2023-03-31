@@ -1,0 +1,87 @@
+.card {
+    /* Sizing */
+    height: 100%;
+    width: 100%;
+    
+    transform-style: preserve-3d;
+  
+    /* Content Alignment */
+    position: relative;
+  
+    /* Styling */
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  
+    user-select: none;
+    cursor: pointer;
+   
+  }
+  
+  .card-front,
+  .card-back {
+    /* Sizing */
+    height: 100%;
+    width: 100%;
+  
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
+    /* Alignment */
+    position: absolute;
+  
+    /* Content Alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Content Styling */
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  }
+  
+  .card-front {
+    background-color: black;
+  }
+  
+  .card-back {
+    background-color: rgb(23, 22, 22);
+    transform: rotateY(180deg);
+  }
+  .buttons {
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    margin: 40px;
+    margin-top: 25%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button1-primary {
+    background-color: #2979FF;
+    color: black;
+    font-weight: 300;
+    font-size: large;
+  }
+  
+  .button1-primary:hover {
+    background-color: #fff;
+  }
+  
+  .button2-secondary {
+    background-color:#fff;
+    color: black;
+    border: 2px solid #333334;
+  }
+  
+  .button2-secondary:hover {
+    background-color: #2979FF;
+    color: #FFFFFF;
+  }
+  

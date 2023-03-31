@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import fireDb from '../firebase'
 import './View.css'
 import { useParams, Link } from "react-router-dom";
-import Topbar from './Topbar';
+
+
 
 const View = () => {
     const [user, setUser] = useState({});
@@ -20,7 +21,7 @@ const View = () => {
 
     return (
         <>
-            <Topbar />
+            
             <div style={{ marginTop: "150px" }}>
                 <div className="card">
                     <div className="card-header">
@@ -39,7 +40,7 @@ const View = () => {
                         <span>{user.email}</span>
                         <br />
                         <br />
-                        <Link to="/trainer">
+                        <Link to="/userdash">
                             <button className='btn btn-edit'>Go Back</button>
                         </Link>
                     </div>

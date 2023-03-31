@@ -30,7 +30,7 @@ const Plan = () => {
                                 </div>
                             ))}
                         </div>
-                        <button className="btn" onClick={() => navigate('/plan')}>Join Now</button>
+                        <button className="btn" onClick={() => navigate('/payment')}>Join Now</button>
                     </div>
                 ))}
             </div>

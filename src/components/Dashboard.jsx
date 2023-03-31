@@ -18,7 +18,6 @@ const Dashboard = () => {
             <Plan />
             <Testimonials />
             <Join />
-            
             <Footer />
         </div>
     )

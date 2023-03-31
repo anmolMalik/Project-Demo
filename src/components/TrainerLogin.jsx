@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-
 import InputControl from "./InputControl";
 import { auth } from "../firebase";
-
 import styles from "./Login.module.css";
+
 
 function TrainerLogin() {
     const navigate = useNavigate();
@@ -28,7 +27,7 @@ function TrainerLogin() {
             .then(async (res) => {
                 setSubmitButtonDisabled(false);
 
-                navigate("/trainer");
+                navigate("/userdash");
             })
             .catch((err) => {
                 setSubmitButtonDisabled(false);
@@ -36,7 +35,7 @@ function TrainerLogin() {
             });
     };
     return (
-       
+        <div className={styles.container1}>
             <div className={styles.container}>
                 <div className={styles.innerBox}>
                     <h1 className={styles.heading}>Trainers Portal</h1>
@@ -51,7 +50,7 @@ function TrainerLogin() {
                     <InputControl
                         label="Password"
                         onChange={(event) =>
-                            setValues( ({ ...values, pass: event.target.value }))
+                            setValues(({ ...values, pass: event.target.value }))
                         }
                         placeholder="Enter Password"
                     />
@@ -59,14 +58,15 @@ function TrainerLogin() {
                     <div className={styles.footer}>
                         <b className={styles.error}>{errorMsg}</b>
                         <button disabled={submitButtonDisabled} onClick={handleSubmission}>
-                        Login
-                    </button>
-                    
+                            Login
+                        </button>
+
+                    </div>
                 </div>
             </div>
         </div>
-    
-  );
+
+    );
 }
 
 export default TrainerLogin;

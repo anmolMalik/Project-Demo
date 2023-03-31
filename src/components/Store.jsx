@@ -51,9 +51,7 @@ const Store = () => {
                                 <td>{data[id].email}</td>
                                 {/* <td>{data[id].pass}</td> */}
                                 <td>
-                                    {/* <Link to={`/update/${id}`}>
-                                        <button className='btn btn-edit'>Edit</button>
-                                    </Link> */}
+                                 
                                     <button className='btn btn-delete' onClick={()=> onDelete(id)}> Delete</button>
                                     <Link to={`/view/${id}`}>
                                         <button className='btn btn-'>View</button>

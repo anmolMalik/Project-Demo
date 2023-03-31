@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css'
 import logo from '../assets/logo.png'
 import Bars from '../assets/bars.png'
+
 import { useState } from 'react'
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
