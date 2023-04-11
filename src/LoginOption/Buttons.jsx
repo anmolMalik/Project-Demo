@@ -1,6 +1,5 @@
 import React from 'react'
 import FlippableCard from './flippable-card'
-import './Buttons.css'
 
 const Buttons = () => {
   return (

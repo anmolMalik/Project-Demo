@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import './App1.css';
-import Navbar from '../components/Navbar';
+import Navbar from './Navbar';
 import Home from '../pages/Home';
 // import Footer from '../components/Footer';
 // import ExerciseDetail from '../pages/ExerciseDetail';

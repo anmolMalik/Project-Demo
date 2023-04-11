@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css';
-
 import Footer from './Footer'
 import Hero from './Hero'
 import Join from './Join'
@@ -22,5 +21,4 @@ const Dashboard = () => {
         </div>
     )
 }
-
 export default Dashboard

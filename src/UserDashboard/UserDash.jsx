@@ -4,10 +4,7 @@ import UserHead from './UserHead'
 const UserDash = () => {
   return (
     <div>
-    <UserHead/>
- 
-    
-      
+      <UserHead />
     </div>
   )
 }

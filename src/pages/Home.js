@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
 
-import Exercises from '../components/Exercises';
-import SearchExercises from '../components/SearchExercises';
-import HeroBanner from '../components/HeroBanner';
+import Exercises from '../ExercisePage/Exercises';
+import SearchExercises from '../ExercisePage/SearchExercises';
+import HeroBanner from '../ExercisePage/HeroBanner';
 
 const Home = () => {
   const [exercises, setExercises] = useState([]);

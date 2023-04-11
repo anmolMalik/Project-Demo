@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 import { exerciseOptions, fetchData, youtubeOptions } from '../utils/fetchData';
-import Detail from '../components/Detail';
-import ExerciseVideos from '../components/ExerciseVideos';
-import SimilarExercises from '../components/SimilarExercises';
+import Detail from '../ExercisePage/Detail';
+import ExerciseVideos from '../ExercisePage/ExerciseVideos';
+import SimilarExercises from '../ExercisePage/SimilarExercises';
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});

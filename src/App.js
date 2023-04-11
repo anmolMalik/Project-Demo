@@ -1,23 +1,19 @@
-import Dashboard from './components/Dashboard';
+import Dashboard from './LandingPage/Dashboard';
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
-import Plans1 from './components/Plans1';
 import './App.css';
 import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Login from './Signup/Login';
+import Signup from './Signup/Signup';
 import Store from './components/Store';
 import View from './components/View';
-import Topbar from './components/Topbar';
-import Buttons from './components/Buttons';
-import TrainerLogin from './components/TrainerLogin';
+import Buttons from './LoginOption/Buttons';
+import TrainerLogin from './Signup/TrainerLogin';
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css"
 import UserDash from './UserDashboard/UserDash';
-import App1 from './components/App1';
+import App1 from './ExercisePage/App1';
 import Payment from './components/Payment';
-
-
 
 function App() {
   return (
@@ -26,10 +22,8 @@ function App() {
         <ToastContainer position="top-center" />
         <Routes>
           <Route path='/' element={<Dashboard />} />
-          <Route path='/plan' element={<Plans1 />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route exact path='/topbar' element={<Topbar />} />
           <Route path='/store' element={<Store />} />
           <Route path='/button' element={<Buttons />} />
           <Route path='/update/:id' element={<Signup />} />
